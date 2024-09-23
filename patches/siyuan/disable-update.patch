@@ -1,0 +1,14 @@
+diff --git forkSrcPrefix/kernel/conf/system.go forkDstPrefix/kernel/conf/system.go
+index 6d51b4c..309594d 100644
+--- forkSrcPrefix/kernel/conf/system.go
++++ forkDstPrefix/kernel/conf/system.go
+@@ -52,7 +52,8 @@ func NewSystem() *System {
+ 		Name:               util.GetDeviceName(),
+ 		KernelVersion:      util.Ver,
+ 		NetworkProxy:       &NetworkProxy{},
+-		DownloadInstallPkg: true,
++		DownloadInstallPkg: false,
++		DisableGoogleAnalytics: true,
+ 	}
+ }
+ 
