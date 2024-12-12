@@ -1,8 +1,8 @@
 name: release-cron
 
 on:
-#   schedule:
-#     - cron: "0 4 * * 5" # 每周五的4点（UTC时间）
+  schedule:
+    - cron: "0 19 * * 2" # 每周二的19点（UTC时间）北京时间周三03点
   workflow_dispatch:
 
 jobs:
